@@ -1,6 +1,6 @@
-/* In your component's CSS or global styles */
+/* component's CSS or global styles */
 .download-btn {
-  background-color: #007bff; /* Bootstrap primary blue */
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -11,5 +11,5 @@
 }
 
 .download-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; /*  hover effect */
 }
