@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   styleUrls: ['./app.component.css'],
   imports: [QRCodeComponent, FormsModule, CommonModule],
+  
   template: `
     <div>
       <h2>Dynamic QR Designer</h2>
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
       <!-- SVG Template Area -->
       <svg #svgEl width="500" height="700" xmlns="http://www.w3.org/2000/svg">
       <!-- Background -->
-  <rect width="100%" height="100%" fill="#8B0000" />
+  <rect width="100%" height="100%" fill="#8f5353" />
   <path d="M0,700 C384,900 384,900 768,700 L768,1081 L0,1081 Z" fill="#FFCC4D" />
 
   <!-- Decorative Icon -->
@@ -30,9 +31,9 @@ import { CommonModule } from '@angular/common';
        
 
         <!-- QR Code SVG injected -->
-        <foreignObject x="150" y="320" width="200" height="200">
+        <foreignObject x="170" y="320" width="200" height="200">
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <qrcode [qrdata]="qrData" [width]="200" elementType="svg"></qrcode>
+            <qrcode [qrdata]="qrData"  [width]="130" elementType="svg"></qrcode>
           </div>
           
         </foreignObject>

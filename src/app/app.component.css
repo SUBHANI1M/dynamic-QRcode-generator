@@ -1,15 +1,120 @@
-/* component's CSS or global styles */
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Container */
+div {
+  text-align: center;
+  padding: 20px;
+  background-color: #e8c5c5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Header */
+h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* SVG Styling */
+svg {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+rect {
+  fill: #8f5353;
+}
+
+path {
+  fill: #ffcc4d;
+}
+
+text {
+  font-family: "Georgia", serif;
+  fill: white;
+}
+
+text.custom-brand {
+  font-family: "Cursive", sans-serif;
+  font-size: 35px;
+}
+
+/* Input Fields */
+label {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+/* Button */
 .download-btn {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 25px;
+  font-size: 18px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .download-btn:hover {
-  background-color: #0056b3; /*  hover effect */
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.download-btn:focus {
+  outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  svg {
+    width: 100%;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 14px;
+  }
 }
